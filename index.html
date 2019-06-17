@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Face Recognition</title>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.1/firebase-storage.js"></script>
+    <script defer src="./src/face-api.js"></script>
+    <script defer src="./src/app.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        canvas {
+            position: absolute;
+           /* margin-top: 10%; */
+            z-index: 999;
+        }
+        button {
+            margin-top: 10%;
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <video id="video" width="720" height="560" autoplay muted></video>
+    <button id="download">Gravar Rosto</button>
+    <!-- <input id= mobile type="file" accept="video/*" capture="camera" /> -->
+
+
+
+    
+</body>
+</html>
